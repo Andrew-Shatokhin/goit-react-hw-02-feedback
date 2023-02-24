@@ -9,7 +9,11 @@ export const GlobalStyle = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  height:100vh;
+  background: #5433FF;
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+;
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

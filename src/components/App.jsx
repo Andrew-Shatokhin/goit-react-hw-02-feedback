@@ -59,12 +59,3 @@ export default class App extends Component {
     );
   }
 }
-
-// export const App = () => {
-//   return (
-//     <Layout>
-//       <Feedback />
-//       <GlobalStyle />
-//     </Layout>
-//   );
-// };

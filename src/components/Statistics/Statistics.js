@@ -1,6 +1,6 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-import { ListStat } from './Statistics.styled';
+import PropTypes from 'prop-types';
+import { ListStat, Text } from './Statistics.styled';
 import Notification from '../Notification/Notification';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
@@ -9,19 +9,19 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
       {total() > 0 ? (
         <ListStat>
           <li>
-            <p>Good: {good}</p>
+            <Text>Good: {good}</Text>
           </li>
           <li>
-            <p>Neutral: {neutral}</p>
+            <Text>Neutral: {neutral}</Text>
           </li>
           <li>
-            <p>Bad: {bad}</p>
+            <Text>Bad: {bad}</Text>
           </li>
           <li>
-            <p>Total: {total()} </p>
+            <Text>Total: {total()} </Text>
           </li>
           <li>
-            <p>Positive feedback: {positivePercentage()}%</p>
+            <Text>Positive feedback: {positivePercentage()}%</Text>
           </li>
         </ListStat>
       ) : (
@@ -32,14 +32,11 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
 };
 
 export default Statistics;
-// Profile.propTypes = {
-//   username: PropTypes.string.isRequired,
-//   tag: PropTypes.string.isRequired,
-//   location: PropTypes.string.isRequired,
-//   avatar: PropTypes.string.isRequired,
-//   stats: PropTypes.shape({
-//     followers: PropTypes.number.isRequired,
-//     views: PropTypes.number.isRequired,
-//     likes: PropTypes.number.isRequired,
-//   }).isRequired,
-// };
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.func.isRequired,
+  positivePercentage: PropTypes.func.isRequired,
+};

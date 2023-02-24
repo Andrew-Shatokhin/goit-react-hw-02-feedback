@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 export const ListBtn = styled.ul`
-  list-style: none;
   display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 `;
 
 export const Button = styled.button`
-  margin-right: 10px;
   border-radius: 5px;
   border-color: gray;
   background-color: white;
