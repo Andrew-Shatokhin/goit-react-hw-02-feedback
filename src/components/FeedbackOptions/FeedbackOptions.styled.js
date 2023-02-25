@@ -16,6 +16,7 @@ export const Button = styled.button`
   font-weight: 500;
   text-transform: capitalize;
   font-style: italic;
+  font-size: 24px;
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
   &:hover {
     background-color: rgb(28, 185, 236);

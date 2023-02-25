@@ -9,4 +9,5 @@ export const Text = styled.p`
   margin: 5px;
   font-style: italic;
   font-weight: 500;
+  font-size: 20px;
 `;

@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Layout = styled.div`
-  height: 400px;
-  width: 300px;
+  height: 600px;
+  width: 500px;
   padding: 20px;
-  margin: 20px auto;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
